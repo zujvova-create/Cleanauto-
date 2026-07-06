@@ -801,7 +801,6 @@ $('copyLinkBtn').addEventListener('click', ()=>{
   navigator.clipboard.writeText(window.location.href).then(()=>{
     const btn = $('copyLinkBtn');
     const old = btn.textContent;
-    btn.textContent = 'Посилання скопійовано ✓';
     btn.classList.add('copied');
     setTimeout(()=>{ btn.textContent = old; btn.classList.remove('copied'); }, 2000);
   });
